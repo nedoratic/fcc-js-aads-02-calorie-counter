@@ -50,5 +50,8 @@ function getCaloriesFromInputs(list) {
 	return calories;
 }
 
+// Calculate Calories
+function calculateCalories(e) {}
+
 // Add Entry Button Event Listener
 addEntryButton.addEventListener('click', addEntry);
