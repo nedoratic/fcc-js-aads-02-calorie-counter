@@ -83,3 +83,6 @@ function calculateCalories(e) {}
 
 // Add Entry Button Event Listener
 addEntryButton.addEventListener('click', addEntry);
+
+// Calculate Remaining Calories Button Event Listener
+calorieCounter.addEventListener('submit', calculateCalories);
