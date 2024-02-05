@@ -78,11 +78,24 @@ function getCaloriesFromInputs(list) {
 	return calories;
 }
 
-// Calculate Calories
-function calculateCalories(e) {}
+// Clear Form
+function clearForm() {
+	const inputContainers = Array.from(document.querySelectorAll('.input-container'));
+
+	for (let i = 0; i < inputContainers.length; i++) {
+		inputContainers[i].innerHTML = '';
+	}
+
+	budgetNumberInput.value = '';
+	output.innerText = '';
+	output.classList.add('hide');
+}
 
 // Add Entry Button Event Listener
 addEntryButton.addEventListener('click', addEntry);
 
 // Calculate Remaining Calories Button Event Listener
 calorieCounter.addEventListener('submit', calculateCalories);
+
+// Clear Button Event Listener
+clearButton.addEventListener('click', clearForm);
